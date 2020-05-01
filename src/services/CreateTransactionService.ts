@@ -18,19 +18,22 @@ class CreateTransactionService {
     if (value <= 0)
       throw Error('The value must be a number greater than zero!');
 
-    const balance = this.transactionsRepository.getBalance();
+    if (!['income', 'outcome'].includes(type))
+      throw Error('Transaction type is invalid!');
 
-    if (type === 'outcome' && value > balance.total) {
+    const { total } = this.transactionsRepository.getBalance();
+
+    if (type === 'outcome' && value > total) {
       throw Error('Insufficient balance');
     }
 
-    const transation = this.transactionsRepository.create({
+    const transaction = this.transactionsRepository.create({
       title,
       value,
       type,
     });
 
-    return transation;
+    return transaction;
   }
 }
 
