@@ -5,14 +5,14 @@
 
 ## Visão geral
 Desafio5 transações financeiras é um servidor backend para serviços de gerenciamento de transações financeiras.
-Ele é responsável de armazenar valores de deposito e retirada, gerenciar esse valores controlando o saldo atual,
+Ele é responsável pelo armazenamento dos valores de depósito e retirada, gerenciando esse valores e controlando o saldo atual,
 e as transações permitidas.
 
-O código é uma resolução do desafio 2 módulo 1 do curso Bootcamp da Rocketseat para aplicação dos conhecimentos inicias sobre nodeJS, em especial os metodos HTTP, roteamento, e tipos de parâmetros em uma requisição.
+O código é uma resolução do desafio 5 módulo 2 do curso Bootcamp da Rocketseat para aplicação dos conhecimentos adiquiridos sobre backend com nodeJS.
 
-O desafio é composto pela construção de um servidor em NodeJS utilizando a linguagem typescript. O projeto possui uma estrutura de pastas divididas por responsabilidades, por exemplo, models, repositories, routes e services.
-Neste desafio não será implementado banco de dados, tendo como armazenamento apenas a memória RAM.
-No projetos são aplicadas alguns padrões de projetos como a DI (Dependence Injection), SRP (Single Responsability Principle), SoC (Separation of Concerns) e DRY (Don't Repeat Yourself).
+O desafio é composto pela construção de um servidor em NodeJS utilizando a linguagem typescript. O projeto possui uma estrutura de pastas divididas por responsabilidades como, models, repositories, routes e services.
+Neste desafio ainda não será implementado banco de dados, tendo os dados armazenados apenas em memória volátil enquando o backend estiver rodando.
+São aplicados alguns padrões de projetos como a DI (Dependence Injection), SRP (Single Responsability Principle), SoC (Separation of Concerns) e DRY (Don't Repeat Yourself).
 
 ### Funcionalidades
 - listagem das transações efetuadas e o saldo;
